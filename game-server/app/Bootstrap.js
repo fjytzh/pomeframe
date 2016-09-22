@@ -40,8 +40,8 @@ var Bootstrap = function(){
      * 鍚姩
      */
     this.run = function(){
+
         this._startPomelo();
-        this.runTest();
     }
 
     /**
@@ -72,21 +72,30 @@ var Bootstrap = function(){
             var actionManager = ActionManager(app);
             app.before(actionManager);
             app.after(actionManager);
+            app.route('default',function(session, msg, app, callback){
+                console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                console.log("aa");
+
+            });
             app.set('connectorConfig',
                 {
                     connector : pomelo.connectors.hybridconnector,
                     heartbeat : 3,
-                    useDict : true,
-                    useProtobuf : true
                 });
         });
+
+        /*
         app.configure('production|development','connector_http',function(){
             var httpPlugin = require('pomelo-http-plugin');
             var http_server_conf = app.curServer;
             app.use(httpPlugin,{http:{host:GameConfig.HOST,port:http_server_conf.http_port}});
+            var actionManager = ActionManager(app);
+            app.before(actionManager);
+            app.after(actionManager);
             var dbConfig = DB_CONFIG.getConfig(http_server_conf.id);
             MysqlClient.init(dbConfig);
         });
+        */
         // start app
         app.start();
         process.on('uncaughtException', function (err) {
@@ -106,11 +115,12 @@ var Bootstrap = function(){
         if(this.app!=null){
             throw new Error("this.app is not null.");
         }
+        ++this.i;
         switch(GameConfig.SOCKET_TYPE){
-            case GameConfig.SOCKET_TYPE_WEBSOCKET://web socket妯″紡
+            case GameConfig.SOCKET_TYPE_WEBSOCKET://web socket方式
                 this._startPomeloForWebSocket();
                 break;
-            case GameConfig.SOCKET_TYPE_SOCKETIO://socket io妯″紡
+            case GameConfig.SOCKET_TYPE_SOCKETIO://socket io方式
                 this._startPomeloForSocketIo();
                 break;
             default :

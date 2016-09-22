@@ -17,36 +17,36 @@ DBCONFIG_LODALHOST.DB_CONFIG = {
                 {host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"}
             ]
         },
-        "s_9002":{
-            "master":{host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"},
-            "slave":[
-                {host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"}
-            ]
-        },
-        "s_9003":{
-            "master":{host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"},
-            "slave":[
-                {host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"}
-            ]
-        },
-        "s_9004":{
-            "master":{host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"},
-            "slave":[
-                {host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"}
-            ]
-        },
-        "s_9005":{
-            "master":{host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"},
-            "slave":[
-                {host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"}
-            ]
-        },
-        "s_9006":{
-            "master":{host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"},
-            "slave":[
-                {host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"}
-            ]
-        }
+        // "s_9002":{
+        //     "master":{host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"},
+        //     "slave":[
+        //         {host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"}
+        //     ]
+        // },
+        // "s_9003":{
+        //     "master":{host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"},
+        //     "slave":[
+        //         {host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"}
+        //     ]
+        // },
+        // "s_9004":{
+        //     "master":{host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"},
+        //     "slave":[
+        //         {host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"}
+        //     ]
+        // },
+        // "s_9005":{
+        //     "master":{host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"},
+        //     "slave":[
+        //         {host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"}
+        //     ]
+        // },
+        // "s_9006":{
+        //     "master":{host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"},
+        //     "slave":[
+        //         {host:"localhost",port:3306,user:"root",password:"q1w2e3",database:"slamdunk_stride"}
+        //     ]
+        // }
     },
 
 

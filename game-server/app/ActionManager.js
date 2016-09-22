@@ -21,12 +21,9 @@ var ActionManager = function(app){
  * @param next
  */
 ActionManager.prototype.before = function(msg,session,next){
-    this.beforeInit(session);
-    if(!this.checkRoute(msg.__route__)){
-        next(false);
-        return;
-    }
-    next(true);
+    // console.log(typeof msg);
+    // console.log(typeof session);
+    next();
 }
 
 /**
@@ -60,6 +57,7 @@ ActionManager.prototype.checkRoute = function(route){
  */
 ActionManager.prototype.beforeInit = function(){
     //设置连接标识
+
 }
 
 

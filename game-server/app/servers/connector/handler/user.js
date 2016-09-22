@@ -25,7 +25,8 @@ Handler.prototype.login = function(){
 
 
 Handler.prototype.test = function(msg, session, next){
-	this.testSend(msg, session, next);
+
+	next(null, {code: 200, msg: 'game server is ok.'});
 }
 
 

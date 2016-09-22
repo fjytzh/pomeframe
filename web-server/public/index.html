@@ -26,7 +26,7 @@
           port: port,
           log: true
         }, function() {
-        pomelo.request("connector.entryHandler.entry", "hello pomelo", function(data) {
+        pomelo.request("connector.user.test", "test", function(data) {
             alert(data.msg);
           });
         });
