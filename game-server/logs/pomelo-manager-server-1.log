@@ -1,4 +1,0 @@
-[2016-09-21 16:36:33.362] [INFO] pomelo - [32m[E:\nodejs\MyApp2\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "manager-server-1"
-[2016-09-21 16:36:34.813] [INFO] pomelo - [32m[E:\nodejs\MyApp2\game-server\node_modules\pomelo\lib\application.js] [39m"manager-server-1" enter after start...
-[2016-09-21 16:36:34.813] [INFO] pomelo - [32m[E:\nodejs\MyApp2\game-server\node_modules\pomelo\lib\application.js] [39m"manager-server-1" finish start
-[2016-09-21 16:36:34.813] [INFO] pomelo - [32m[E:\nodejs\MyApp2\game-server\node_modules\pomelo\lib\application.js] [39m"manager-server-1" startup in 1326 ms
