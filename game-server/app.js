@@ -56,8 +56,8 @@ app.configure('production|development', function() {
 	app.route('connector', routeUtil.connector);
 
 	//dbconf
-	//app.loadConfig('mysql', app.getBase() + '/../shared/config/mysql.json');
-	app.loadConfig('mongodb', app.getBase() + '/../shared/config/mongodb.json');
+	app.loadConfig('mysql', app.getBase() + '/../shared/config/mysql.json');
+	//app.loadConfig('mongodb', app.getBase() + '/../shared/config/mongodb.json');
 
 	app.filter(pomelo.filters.timeout());
 
