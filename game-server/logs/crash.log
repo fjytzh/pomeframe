@@ -1,2 +1,7 @@
 [2015-08-24 11:25:30.990] [INFO] crash-log - [32m[d:\xampp\htdocs\nodegame\game-server\node_modules\pomelo\lib\master\master.js] [39m[connector_http],[s_9001],[1440386730990],[disconnect]
 [2016-09-22 18:45:49.863] [INFO] crash-log - [32m[d:\xampp\htdocs\node_server\game-server\node_modules\pomelo\lib\master\master.js] [39m[connector],[connector-server-1],[1474541149863],[disconnect]
+[2016-09-23 17:10:05.111] [INFO] crash-log - [32m[d:\xampp\htdocs\node_server\game-server\node_modules\pomelo\lib\master\master.js] [39m[connector],[connector-server-1],[1474621805111],[disconnect]
+[2016-09-23 17:17:00.012] [INFO] crash-log - [32m[d:\xampp\htdocs\node_server\game-server\node_modules\pomelo\lib\master\master.js] [39m[connector],[connector-server-1],[1474622220012],[disconnect]
+[2016-09-23 17:40:28.777] [INFO] crash-log - [32m[d:\xampp\htdocs\node_server\game-server\node_modules\pomelo\lib\master\master.js] [39m[connector],[connector-server-1],[1474623628777],[disconnect]
+[2016-09-23 19:16:01.067] [INFO] crash-log - [32m[d:\xampp\htdocs\node_server\node_modules\pomelo\lib\master\master.js] [39m[connector],[connector-server-1],[1474629361067],[disconnect]
+[2016-09-23 19:23:04.624] [INFO] crash-log - [32m[d:\xampp\htdocs\node_server\node_modules\pomelo\lib\master\master.js] [39m[connector],[connector-server-1],[1474629784624],[disconnect]

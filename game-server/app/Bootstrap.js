@@ -68,15 +68,9 @@ var Bootstrap = function(){
         this.app = app;
         app.set('name', 'nodegame');
         // app configuration
+        app.filter(ActionManager());
         app.configure('production|development', 'connector', function(){
-            var actionManager = ActionManager(app);
-            app.before(actionManager);
-            app.after(actionManager);
-            app.route('default',function(session, msg, app, callback){
-                console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                console.log("aa");
 
-            });
             app.set('connectorConfig',
                 {
                     connector : pomelo.connectors.hybridconnector,

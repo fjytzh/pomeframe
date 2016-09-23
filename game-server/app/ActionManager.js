@@ -3,15 +3,14 @@
  * Created by chengxu on 2015/7/8.
  */
 
-module.exports = function(app){
-    return new ActionManager(app);
+module.exports = function(){
+    return new ActionManager();
 }
 
 
 
-var ActionManager = function(app){
-    this.app = app;
-    this.testid = null;
+var ActionManager = function(){
+
 }
 
 /**
