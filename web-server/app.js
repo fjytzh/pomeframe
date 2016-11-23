@@ -32,6 +32,22 @@ app.configure('production', function(){
   app.use(express.errorHandler());
 });
 
+//http包中增加下发一个服务器处理时间X-Execution-Time
+app.use(function (req, res, next) {
+  // 记录start time:
+  var exec_start_at = Date.now();
+  // 保存原始处理函数:
+  var _send = res.send;
+  // 绑定我们自己的处理函数:
+  res.send = function () {
+    // 发送Header:
+    res.set('X-Execution-Time', String(Date.now() - exec_start_at));
+    // 调用原始处理函数:
+    return _send.apply(res, arguments);
+  };
+  next();
+});
+
 app.get('/auth_success', function(req, res) {
   if (req.session.userId) {
     var token = Token.create(req.session.userId, Date.now(), secret);
